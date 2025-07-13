@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qo'shimcha ma'lumot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/photo_2022-03-26_10-52-44.jpg">
+    <style>
+        body {
+            background: #b5b8c1;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .info-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border: 2px solid #000;
+        }
+
+        .back-btn {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #333;
+        }
+
+        .back-btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .info-content h1 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        .info-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            border-left: 4px solid #000;
+        }
+
+        .info-section h2 {
+            color: #000;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .info-section p {
+            color: #333;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .map-container {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Media so'rovlar */
+        @media (max-width: 768px) {
+            .info-container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            .info-content h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .info-section {
+                padding: 12px;
+            }
+
+            .info-section h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .info-container {
+                padding: 15px;
+                margin: 15px auto;
+            }
+
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            .info-content h1 {
+                font-size: 20px;
+            }
+
+            .info-section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info-container">
+        <button class="back-btn"><a class="knopka" href="index.html">Ortga</a></button>
+        <div class="info-content">
+            <h1>Qo'shimcha ma'lumot</h1>
+
+            <div class="info-section">
+                <h2>Do'konimiz haqida</h2>
+                <p>"Mangchi Power" - qurilish materiallari va asbob-uskunalarining ishonchli yetkazib beruvchisi. Biz
+                    yuqori sifatli mahsulotlarni eng qulay narxlarda taklif qilamiz.</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Manzilimiz</h2>
+                <p>Toshkent shahar, Olmazor tumani, shiroq 1</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.769907316499!2d69.2453800764636!3d41.35735469785687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d4b89dcd415%3A0x480f397969aa5c5e!2zTWFuZ2NoaS51eiAtINCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQvNCw0YLQtdGA0LjQsNC70Ysg0LIg0KLQsNGI0LrQtdC90YLQtSwg0JDRgNC10L3QtNCwINGB0YLRgNC-0LjRgtC10LvRjNC90YvRhSDQuNC90YHRgtGA0YPQvNC10L3RgtC-0LIg0LIg0KLQsNGI0LrQtdC90YLQtQ!5e0!3m2!1sru!2s!4v1752406443222!5m2!1sru!2s" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Ish vaqti</h2>
+                <p>Dushanba - Juma: 09:00 dan 18:00 gacha</p>
+                <p>Shanba: 10:00 dan 16:00 gacha</p>
+                <p>Yakshanba: Dam olish kuni</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

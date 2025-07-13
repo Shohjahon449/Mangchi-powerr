@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aloqa markazi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/photo_2022-03-26_10-52-44.jpg">
+    <style>
+        body.alolqa {
+            background: #b5b8c1;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 30px;
+            border: 2px solid #000;
+        }
+        
+        .back-btn {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #333;
+        }
+        
+        .back-btn a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-content h1 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        
+        .phone-number {
+            background: #f0f0f0;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-left: 4px solid #000;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-number:hover {
+            background: #e0e0e0;
+        }
+        
+        .phone-number a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+        
+        /* Media so'rovlar */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .contact-content h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .phone-number {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-container {
+                padding: 15px;
+                margin: 15px auto;
+            }
+            
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            
+            .contact-content h1 {
+                font-size: 20px;
+            }
+            
+            .phone-number {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body class="alolqa">
+    <div class="contact-container">
+        <button class="back-btn"><a class="knopka" href="index.html">Ortga</a></button> 
+        <div class="contact-content">
+            <h1>Aloqa markazi</h1>
+            <div class="phone-number">
+                <a href="tel:+998903716201">📞 +998 90 371 62 01</a>
+            </div>
+            <div class="phone-number">
+                <a href="tel:+998909435012">📞 +998 90 943 50 12</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
